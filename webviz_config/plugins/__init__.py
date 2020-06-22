@@ -19,6 +19,8 @@ from ._syntax_highlighter import SyntaxHighlighter
 from ._table_plotter import TablePlotter
 from ._embed_pdf import EmbedPdf
 from ._markdown import Markdown
+from ._minimal_plugin import MinimalPlugin
+from ._interactive_plugin import InteractivePlugin
 
 warnings.simplefilter("default", DeprecationWarning)
 
@@ -33,6 +35,8 @@ __all__ = [
     "TablePlotter",
     "EmbedPdf",
     "Markdown",
+    "MinimalPlugin",
+    "InteractivePlugin",
 ]
 
 for entry_point in pkg_resources.iter_entry_points("webviz_config_containers"):

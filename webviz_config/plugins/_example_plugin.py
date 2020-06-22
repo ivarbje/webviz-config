@@ -26,9 +26,12 @@ class ExamplePlugin(WebvizPluginABC):
         )
 
     def set_callbacks(self, app: Dash) -> None:
+
         @app.callback(
             Output(self.uuid("output-state"), "children"),
             [Input(self.uuid("submit-button"), "n_clicks")],
         )
         def _update_output(n_clicks: int) -> str:
             return f"Button has been pressed {n_clicks} times."
+
+

@@ -1,0 +1,18 @@
+title: Ivar's application
+
+pages:
+  - title: Front page
+    content:
+    - BannerImage:
+        image: example_banner.png
+        title: My banner image
+
+  - title: Minimal Plugin
+    content:
+    - MinimalPlugin:
+
+  - title: InteractivePlugin
+    content:
+    - InteractivePlugin:
+        title: Simple interactive plugin
+
